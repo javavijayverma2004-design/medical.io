@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔥 NAVBAR -->
+<div class="navbar">
+    <h2>Medical Portal</h2>
+    <div>
+        <a href="admin.html">Admin</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+</div>
+
+<h1>Admin Panel</h1>
+
+<div class="form">
+
+    <input id="title" placeholder="Title"><br><br>
+
+    <select id="category">
+        <option>X-Ray</option>
+        <option>MRI</option>
+        <option>Report</option>
+    </select><br><br>
+
+    <input type="file" id="file"><br><br>
+
+    <input id="fileUrl" placeholder="OR Paste File URL"><br><br>
+
+    <button onclick="upload()">Upload</button>
+
+</div>
+
+<h2>All Files</h2>
+<div id="list"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
